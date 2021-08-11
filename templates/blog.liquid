@@ -1,6 +1,6 @@
 {% paginate blog.articles by 5 %}
 
-<h1>{{ blog.title }}</h1>
+<h1>I cam from template folder and my name is blog.liquid {{ blog.title }}</h1>
 {% for article in blog.articles %}
   <div>
     <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
