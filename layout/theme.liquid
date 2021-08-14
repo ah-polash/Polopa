@@ -35,8 +35,7 @@
       {{- 'product.bundle.css' | asset_url | stylesheet_tag -}}
       <link rel="preload" href="{{ 'product.bundle.js' | asset_url }}" as="script">
     {%- endif -%}
-  
-    {%- render 'pol-nav' -%}
+
   
     {{ content_for_header }}
   </head>
@@ -62,5 +61,4 @@
     {% endif %}
   
   </body>
-  </html>
-  
+  </html>  
