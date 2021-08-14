@@ -25,15 +25,7 @@
 
    <!-- END NEW CODE  -->
   
-  <!-- Stylesheets -->
-  <link href="css/font-awesome-all.css" rel="stylesheet">
-  <link href="css/flaticon.css" rel="stylesheet">
-  <link href="css/owl.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+
   {{ content_for_header }}
   </head>
   
@@ -1100,19 +1092,20 @@
   
   
   <!-- jequery plugins -->
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/validation.js"></script>
-  <script src="js/jquery.fancybox.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/circle-progress.js"></script>
-  <script src="js/jquery.countTo.js"></script>
-  <script src="js/scrollbar.js"></script>
-  <script src="js/jquery.paroller.min.js"></script>
-  <script src="js/tilt.jquery.js"></script>
+
+  {{ 'jquery.js' | asset_url | script_tag  }}
+  {{ 'popper.min.js' | asset_url | script_tag  }}
+  {{ 'bootstrap.min.js' | asset_url | script_tag }}
+  {{ 'owl.js' | asset_url | script_tag }}
+  {{ 'validation.js' | asset_url | script_tag }}
+  {{ 'jquery.fancybox.js' | asset_url | script_tag }}
+  {{ 'appear.js' | asset_url | script_tag }}
+  {{ 'circle-progress.js' | asset_url | script_tag }}
+  {{ 'jquery.countTo.js' | asset_url | script_tag }}
+  {{ 'scrollbar.js' | asset_url | script_tag }}
+  {{ 'jquery.paroller.js' | asset_url | script_tag }}
+  {{ 'tilt.jquery.js' | asset_url | script_tag }}
+
   
   <!-- main-js -->
   <script src="js/script.js"></script>
