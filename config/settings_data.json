@@ -13,8 +13,8 @@
           "title": "My Bannere Section default Heading text",
           "description": "My Banner section default Paragraph",
           "cta_left": "Get Started",
-          "cta_right": "Play Video",
-          "button_link": ""
+          "cta_right": "1 St page",
+          "button_link": "shopify:\/\/pages\/1st-page"
         }
       },
       "footer": {
