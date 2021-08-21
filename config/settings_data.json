@@ -21,10 +21,20 @@
         "type": "footer",
         "settings": {
         }
+      },
+      "16295780636f7a706b": {
+        "type": "banner",
+        "settings": {
+          "title": "My Bannere Section default Heading text",
+          "description": "My Banner section default Paragraph",
+          "cta_left": "Get Started",
+          "cta_right": "Play Video",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
-
+      "16295780636f7a706b"
     ]
   }
 }
