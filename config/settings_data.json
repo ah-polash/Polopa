@@ -24,6 +24,7 @@
       },
       "16295780636f7a706b": {
         "type": "banner",
+        "disabled": true,
         "settings": {
           "title": "My Bannere Section default Heading text",
           "description": "My Banner section default Paragraph",
