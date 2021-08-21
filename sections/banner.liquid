@@ -1,72 +1,12 @@
-        <!-- banner-section -->
-        <section class="banner-style-15 centred">
-            <div class="anim-icons">
-                <div class="icon icon-1"><img src="{{'anim-icon-4.png' | asset_url }}anim-icon-4.png" alt=""></div>
-                <div class="icon icon-2 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
-                <div class="icon icon-3 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
-                <div class="icon icon-4"><img src="{{'background.jpg' | asset_url }}anim-icon-4.png" alt=""></div>
-                <div class="icon icon-5 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
-                <div class="icon icon-6 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
-            </div>
-            <div class="container">
-                <div class="content-box">
-                    <h1>{{ section.settings.title  }}</h1>
-                    <div class="text">{{ section.settings.description  }}</div>
-                    <div class="btn-box">
-                        <a href="#" class="btn-one">{{ section.settings.cta_left  }}</a>
-                        <a href="{{ section.settings.button_link  }}" class="lightbox-image video-btn" data-caption="{{ section.settings.cta_right  }}"> <i class="flaticon-play-button"></i></a>
-                    </div>
-                </div>
-                <figure class="image-box"><img src="{{ section.settings.image  }}" alt=""></figure>
-            </div>
-        </section>
-        <!-- banner-section end -->
-        {% schema %}
-        {
-            "name": "Banner",
-            "class": "banner-section",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Banner large Image"
-                },
-                {
-                    "type": "richtext",
-                    "id": "title",
-                    "default": "My Bannere Section default Heading text",
-                    "label": "Heading Title"
-                },
-                {
-                    "type": "richtext",
-                    "id": "description",
-                    "default": "My Banner section default Paragraph",
-                    "label": "Heading text"
-                },
-                {
-                    "type": "text",
-                    "id": " cta_left",
-                    "default": "Get Started",
-                    "label": "Left CTA"
-                },
-                {
-                    "type": "text",
-                    "id": "cta_right",
-                    "default": "Play Video",
-                    "label": "Video Button ( CTA Right )"
-                },                
-                {
-                    "type": "url",
-                    "id": "button_link",
-                    "default": "https://www.youtube.com/watch?v=nfP5N9Yc72A",
-                    "label": "Heading Button Link"
-                }
-            ],
-            "presets": [
-                {
-                    "category": "Banner",
-                    "name":"Simple Hero"
-                }
-            ]
-        }
-        {% endschema %}
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
