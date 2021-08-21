@@ -1,0 +1,30 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/illustration-30.png",
+          "title": "My Bannere Section default Heading text",
+          "description": "My Banner section default Paragraph",
+          "cta_left": "Get Started",
+          "cta_right": "Play Video",
+          "button_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
