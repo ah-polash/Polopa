@@ -1768,7 +1768,7 @@
                 slide.width  = slide.opts.width;
                 slide.height = slide.opts.height;
 
-                slide.$ghost = $('<img />')
+                slide.$ghost = $('<img loading="lazy" />')
                     .one('error', function() {
 
                         $(this).remove();
@@ -1803,7 +1803,7 @@
 
         setBigImage : function ( slide ) {
             var self = this;
-            var $img = $('<img />');
+            var $img = $('<img loading="lazy" />');
 
             slide.$image = $img
                 .one('error', function() {
@@ -4725,7 +4725,7 @@
 				}
 
 				if ( src && src.length ) {
-					list += '<li data-index="' + i + '"  tabindex="0" class="fancybox-thumbs-loading"><img data-src="' + src + '" /></li>';
+					list += '<li data-index="' + i + '"  tabindex="0" class="fancybox-thumbs-loading"><img loading="lazy" data-src="' + src + '" /></li>';
 				}
 			});
 

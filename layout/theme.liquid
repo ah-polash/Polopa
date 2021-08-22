@@ -36,7 +36,9 @@
   
     
         {% section 'header' %}
-      {% section 'banner' %}
+        {% section 'banner' %}
+        {% section 'how' %}
+
     
 		
     
@@ -44,53 +46,7 @@
 
     
     
-        <!-- work-section -->
-        <section class="work-section">
-            <div class="container">
-              {{ content_for_layout }}
-                <div class="sec-title center">
-                    <h2>How Does This Work?</h2>
-                    <p>The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey<br />Why gormless, pear shaped.!</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="pattern-bg" style="background-image: url(images/icons/pattern-22.png);"></div>
-                                <h3><a href="#">Digital Analytics</a></h3>
-                                <div class="text">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</div>
-                                <div class="icon-box"><i class="flaticon-profit-1"></i></div>
-                                <div class="link-btn"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="pattern-bg" style="background-image: url(images/icons/pattern-22.png);"></div>
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <div class="text">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</div>
-                                <div class="icon-box"><i class="flaticon-rocket-launch"></i></div>
-                                <div class="link-btn"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item wow flipInY" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="pattern-bg" style="background-image: url(images/icons/pattern-22.png);"></div>
-                                <h3><a href="#">Email Marketing</a></h3>
-                                <div class="text">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</div>
-                                <div class="icon-box"><i class="flaticon-mail-1"></i></div>
-                                <div class="link-btn"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-btn"><a href="#" class="theme-btn-two">View More Features</a></div>
-            </div>
-        </section>
-        <!-- work-section end -->
+
     
     
         <!-- feature-style-13 -->
@@ -128,7 +84,7 @@
                             <div id="image_block_36">
                                 <div class="image-box wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                                     <div class="bg-layer" style="background-image: url(images/icons/pattern-23.png);"></div>
-                                    <figure class="image clearfix js-tilt"><img src="{{ 'illustration-31.png' | asset_url }}" alt=""></figure>
+                                    <figure class="image clearfix js-tilt"><img loading="lazy" src="{{ 'illustration-31.png' | asset_url }}" alt=""></figure>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +96,7 @@
                             <div id="image_block_37">
                                 <div class="image-box wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                                     <div class="bg-layer" style="background-image: url(images/icons/pattern-24.png);"></div>
-                                    <figure class="image clearfix js-tilt"><img src="{{ 'illustration-32.png' | asset_url }}" alt=""></figure>
+                                    <figure class="image clearfix js-tilt"><img loading="lazy" src="{{ 'illustration-32.png' | asset_url }}" alt=""></figure>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +140,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-1.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -199,7 +155,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-2.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -214,7 +170,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-3.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -229,7 +185,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-4.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -244,7 +200,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-1.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -259,7 +215,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-2.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -274,7 +230,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-3.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -289,7 +245,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-4.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -304,7 +260,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-1.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-1.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -319,7 +275,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-2.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-2.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -334,7 +290,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-3.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-3.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -349,7 +305,7 @@
                     <div class="case-block-one">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
+                                <figure class="image"><img loading="lazy" src="{{ 'case-4.png' | asset_url }}" alt=""></figure>
                                 <div class="box">
                                     <a href="images/resource/case-4.png" class="lightbox-image" data-fancybox="gallery"><i class="fas fa-search"></i></a>
                                     <a href="#"><i class="fas fa-link"></i></a>
@@ -371,9 +327,9 @@
         <section class="counter-style-three">
             <div class="bg-layer" style="background-image: url(images/icons/map-shap-5.png);"></div>
             <div class="anim-icons">
-                <div class="icon icon-1 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
-                <div class="icon icon-2"><img src="{{'background.jpg' | asset_url }}anim-icon-4.png" alt=""></div>
-                <div class="icon icon-3 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
+                <div class="icon icon-1 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
+                <div class="icon icon-2"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-4.png" alt=""></div>
+                <div class="icon icon-3 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
             </div>
             <div class="container">
                 <div class="sec-title center">
@@ -434,7 +390,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -445,7 +401,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Liona Moresa</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -456,7 +412,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -467,7 +423,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -478,7 +434,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Liona Moresa</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -489,7 +445,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -500,7 +456,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-9.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -511,7 +467,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-10.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Liona Moresa</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -522,7 +478,7 @@
                     <div class="testimonial-content">
                         <div class="inner-box">
                             <div class="author-info">
-                                <figure class="image-box"><img src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
+                                <figure class="image-box"><img loading="lazy" src="{{ 'testimonial-13.png' | asset_url }}" alt=""></figure>
                                 <h5 class="name">Lurch Schpellchek</h5>
                                 <span class="designation">Manager</span>
                             </div>
@@ -617,7 +573,7 @@
                 <div class="vactor-bg-2 wow slideInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(images/icons/vactor-10.png);"></div>
             </div>
             <div class="anim-icons">
-                <div class="icon icon-1"><img src="{{'background.jpg' | asset_url }}shap-16.png" alt=""></div>
+                <div class="icon icon-1"><img loading="lazy" src="{{'background.jpg' | asset_url }}shap-16.png" alt=""></div>
             </div>
             <div class="container">
                 <div class="inner-container">
@@ -641,18 +597,18 @@
         <section class="clients-section home-15 centred">
             <div class="container">
                 <div class="clients-carousel owl-carousel owl-theme owl-dots-none">
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
-                    <figure class="image-box"><a href="#"><img src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-1.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-2.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-3.png' | asset_url }}" alt=""></a></figure>
+                    <figure class="image-box"><a href="#"><img loading="lazy" src="{{ 'client-4.png' | asset_url }}" alt=""></a></figure>
                 </div>
             </div>
         </section>

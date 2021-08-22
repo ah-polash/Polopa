@@ -1,12 +1,12 @@
         <!-- banner-section -->
         <section class="banner-style-15 centred">
             <div class="anim-icons">
-                <div class="icon icon-1"><img src="{{'anim-icon-4.png' | asset_url }}anim-icon-4.png" alt=""></div>
-                <div class="icon icon-2 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
-                <div class="icon icon-3 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
-                <div class="icon icon-4"><img src="{{'background.jpg' | asset_url }}anim-icon-4.png" alt=""></div>
-                <div class="icon icon-5 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
-                <div class="icon icon-6 rotate-me"><img src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
+                <div class="icon icon-1"><img loading="lazy" src="{{'anim-icon-4.png' | asset_url }}anim-icon-4.png" alt=""></div>
+                <div class="icon icon-2 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
+                <div class="icon icon-3 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
+                <div class="icon icon-4"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-4.png" alt=""></div>
+                <div class="icon icon-5 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-5.png" alt=""></div>
+                <div class="icon icon-6 rotate-me"><img loading="lazy" src="{{'background.jpg' | asset_url }}anim-icon-6.png" alt=""></div>
             </div>
             <div class="container">
                 <div class="content-box">
@@ -17,7 +17,7 @@
                         <a href="{{ section.settings.button_link  }}" class="lightbox-image video-btn" data-caption=""> <i class="flaticon-play-button"></i>{{ section.settings.cta_right  }}</a>
                     </div>
                 </div>
-                <figure class="image-box"><img src="https://btheme-dev.myshopify.com/{{ section.settings.image  }}" alt=""></figure>
+                <figure class="image-box"><img loading="lazy" src="https://btheme-dev.myshopify.com/{{ section.settings.image  }}" alt=""></figure>
             </div>
         </section>
         <!-- banner-section end -->
@@ -64,8 +64,8 @@
             "presets": [
                 {
                     "category": "Banner",
-                    "name":"Simple Hero"
+                    "name":"Banner Section"
                 }
             ]
         }
-        {% endschema %}
+        {% endschema %} 
