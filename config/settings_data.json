@@ -1,1 +1,44 @@
-{"current":{"sections":{"header":{"type":"header","settings":{}},"banner":{"type":"banner","settings":{"image":"shopify:\/\/shop_images\/illustration-30.png","title":"My Bannere Section default Heading text","description":"My Banner section default Paragraph","cta_left":"Get Started","cta_right":"1 St page","button_link":"shopify:\/\/pages\/1st-page"}},"footer":{"type":"footer","settings":{}}},"content_for_index":[]}}
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/illustration-30.png",
+          "title": "My Bannere Section default Heading text",
+          "description": "My Banner section default Paragraph",
+          "cta_left": "Get Started",
+          "cta_right": "1 St page",
+          "button_link": "shopify:\/\/pages\/1st-page"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      },
+      "how": {
+        "type": "how",
+        "settings": {
+          "title2": "Hello Polash",
+          "howto_cta": "Default CTA text"
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_collection": "eid-collection-2021",
+          "title": "Featured Collection"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
