@@ -455,15 +455,15 @@
     padding-bottom: 100px;
   }
 
-  .case-block-one .inner-box .image-box .box a{
+  .  .inner-box .image-box .box a{
     margin: 0px 15px;
   }
 
-  .case-block-one .inner-box .image-box .box a:before{
+  .  .inner-box .image-box .box a:before{
     right: -18px;
   }
 
-  .case-block-one .inner-box .lower-content{
+  .  .inner-box .lower-content{
     padding: 35px 0px;
   }
 
@@ -1839,7 +1839,7 @@
     width: 100%;
   }
 
-  .case-block-one .inner-box .lower-content h2{
+  .  .inner-box .lower-content h2{
     font-size: 22px;
   }
 
