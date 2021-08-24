@@ -17,7 +17,7 @@
                         <a href="{{ section.settings.button_link  }}" class="lightbox-image video-btn" data-caption=""> <i class="flaticon-play-button"></i>{{ section.settings.cta_right  }}</a>
                     </div>
                 </div>
-                <figure class="image-box"><img loading="lazy" src="https://btheme-dev.myshopify.com/{{ section.settings.image  }}" alt=""></figure>
+                <figure class="image-box"><img loading="lazy" src="{{ section.settings.image | img_url: 'large' }}" alt=""></figure>
             </div>
         </section>
         <!-- banner-section end -->
