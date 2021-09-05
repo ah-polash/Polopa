@@ -1,0 +1,55 @@
+{% assign current_product = product.selected_or_first_available_variant %}
+{% assign product_image = current_product.featured_image | default: product.featured_image %}
+
+
+
+<section class="software-product elements" style="background:#f5f9ff; ">
+  <div class="container">
+      <div class="row" style="">
+          <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+              <div id="content_block_30" style="padding-top:0;">
+                  <div class="content-box" style="padding-top:0; color:red;">
+                      <div class="sec-title"><h2  style="color:black;" >{{product.title}}</h2></div>
+                      <div class="text"  style="color:black;" >{{product.description}}</div>
+                         {% form 'product', product, class:"product-form", id:"AddToCartForm" %}
+                      <div class="btn-box"><button style="background:green; padding:25px; color:White;" type="submit" name="add" id="AddToCard">Add to cart</button>
+                    
+                      {{ form | payment_button }}
+                    
+                    </div>
+
+                         {% endform %}
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+              <div id="image_block_29">
+                  <div class="image-box wow slideInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInRight;">
+                    {% for image in product.images %}
+                      <figure class="image clearfix float-bob-y"><img src="{{ product_image | img_url: 'large' }}" alt="{{product_image.alt}}"></figure>
+                    {% endfor %}  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+{% schema %}
+{
+    "name": "Product pages",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "dynamic_buttons_checkbox",
+            "label": "Enable Dynamic Buttons",
+            "default": false
+        }
+    ]
+}
+{% endschema %}
+

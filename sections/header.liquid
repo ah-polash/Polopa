@@ -1,5 +1,5 @@
        <!-- main header -->
-       <header class="main-header home-15">
+       <header class="page-title style-two" style="padding:0px;">
         <div class="outer-container">
             <div class="container">
                 <div class="main-box clearfix">
@@ -80,3 +80,25 @@
         </div>
     </header>
     <!-- main-header end -->
+    {% schema %}
+        {
+            "name": "Header",
+            "class": "header-section",
+            "settings": [ 
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Upload your logo"
+                  
+                }
+            ],
+            "presets":[
+                {
+                "name": "Logo",
+                "category": "Logo"
+                }
+
+            ]
+            
+        }
+    {% endschema %}
