@@ -1,1 +1,53 @@
-<h2> Hello Pol, I am from the FAQ template </h2>
+<div id='{{ section.id }}'>
+
+</div>
+{% schema %}
+{
+  "name": "faq",
+  "class": "faq-section",
+  "settings": [
+    {
+      "id": "enable_faq",
+      "type": "checkbox",
+      "label": "Enable FAQ",
+      "info": "myinfotext"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "blocks",
+      "name": "myblockname",
+
+      "settings": [
+        {
+          "id": "questions",
+          "type": "text",
+          "label": "questions",
+          "info": "questionsinfotext",
+          "default": "myquestionstext"
+        },
+        {
+          "id": "answer",
+          "type": "textarea",
+          "label": "answer",
+          "info": "label info",
+          "default": "defaultanswertext"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "faq",
+      "category": "Custom content"
+    }
+  ]
+}
+{% endschema %}
+{% javascript %} 
+
+ {% endjavascript %}
+{% style %} 
+
+ {% endstyle %}
