@@ -1,53 +1,84 @@
 <div id='{{ section.id }}'>
 
-</div>
-{% schema %}
-{
-  "name": "faq",
-  "class": "faq-section",
-  "settings": [
-    {
-      "id": "enable_faq",
-      "type": "checkbox",
-      "label": "Enable FAQ",
-      "info": "myinfotext"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "blocks",
-      "name": "myblockname",
 
+    <h1>Pure CSS Accordion <sup>2.0</sup></h1>
+    <div class="row">
+      <div class="col">
+        <h2>Open <b>multiple</b></h2>
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="chck1">
+            <label class="tab-label" for="chck1">Item 1</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" id="chck2">
+            <label class="tab-label" for="chck2">Item 2</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>
+      
+    
+    
+    {% schema %}
+    {
+      "name": "faq",
+      "class": "faq-section",
       "settings": [
         {
-          "id": "questions",
-          "type": "text",
-          "label": "questions",
-          "info": "questionsinfotext",
-          "default": "myquestionstext"
+          "id": "disable_faq",
+          "type": "checkbox",
+          "label": "disable_faq",
+          "info": "disable the faq section",
+          "default": false
         },
         {
-          "id": "answer",
-          "type": "textarea",
-          "label": "answer",
-          "info": "label info",
-          "default": "defaultanswertext"
+          "id": "faq_title",
+          "type": "text",
+          "label": "Faq section title",
+          "info": "give it a name",
+          "placeholder": "Frequently asked questions",
+          "default": ""
+        }
+      ],
+      "blocks": [
+        {
+          "type": "Items",
+          "settings": [
+            {
+              "id": "questions",
+              "type": "text",
+              "label": "write your questions",
+              "info": ""
+            },
+            {
+              "id": "answer",
+              "type": "textarea",
+              "label": "Answer",
+              "info": ""
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "faq",
+          "category": "Custom content"
         }
       ]
     }
-  ],
-
-  "presets": [
-    {
-      "name": "faq",
-      "category": "Custom content"
-    }
-  ]
-}
-{% endschema %}
-{% javascript %} 
-
- {% endjavascript %}
-{% style %} 
-
- {% endstyle %}
+    {% endschema %}
+    {% javascript %} 
+    
+     {% endjavascript %}
+    {% style %} 
+    
+     {% endstyle %}
