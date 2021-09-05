@@ -1,10 +1,43 @@
 
 <div class="row">
-    <div class="container">
+    <div class="container-fluid">
     <h2> {{page.title}} </h2>
-    <small>{{ page.published_at | date: '%B %d, %Y' }}</small>
+    {% if section.setting.show_publish_date%}
+    <small>{{ page.published_at | date: '%B %d, %Y' }}</small> 
+    {% endif %}
+    
     <br />
 
     {{page.content}}
     </div>
 </div>
+
+{% schema %}
+{
+    "name": "Page settings",
+    "settings": [
+        {
+            "type": "select",
+            "id": "container",
+            "label": "Layout",
+            "options": [
+                {
+                    "value": "container",
+                    "label": "Container"
+                },
+                {
+                    "value": "container-fluid",
+                    "label": "Container Fluid"
+                }
+            ],
+            "default": "container"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_publish_date",
+            "default": true,
+            "label": "Show Publish Date"
+        }
+    ]
+}
+{% endschema %}
